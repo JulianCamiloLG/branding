@@ -11,9 +11,6 @@
 |
 */
 
-Route::group(['middleware' => 'cors'], function(Router $router){
-    $router->get('product', 'ProductsController'); // <- your route here
-});
 
 Route::get('/', function () {
     return view('welcome');
